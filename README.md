@@ -116,6 +116,12 @@ To use this project, you have to:
     <li>Attach Articles to desired Digest.</li>
 </ol>
 
+Every 2 minutes, the project will check each ACTIVE RSS Source and store into database, all articles relative to active RSS feeds.
+If you want to manually collect and store to database, articles relative to ACTIVE RSS Sources, you can use the following commandline in terminal/console:
+```
+docker exec -it ID_OF_WEB_CONTAINER python manage.py fetchfeeds
+```
+
 ## Built Using <a name = "built_using"></a>
 
 - [Docker](https://www.docker.com/) - Docker environment
